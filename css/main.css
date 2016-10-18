@@ -1,0 +1,206 @@
+
+body {
+	margin: 0; 
+	background-color: #eaeaea;
+}
+
+nav {             /* оформлення флекс контейнера для шапки сайту*/
+	height: 50px;
+	min-width: 900px;
+
+	background: #e6e5e5;
+	justify-content: flex-end;
+	display: flex;  
+	flex-flow: row wrap;
+
+	  
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+}
+
+
+.order {                     /* оформнення навігаційної панелі */
+	list-style: none;
+	display: flex;
+	font-size: 20px;
+	flex-flow: row wrap;
+	align-items: flex-end;
+	margin: 20px 100px 0 0;
+}
+
+li {
+	padding: 5px;
+}
+
+.order a {
+	text-decoration: none;
+	color: black;
+}
+
+.order a:hover {
+	color: white;
+}
+
+.logo {					/* логотип */
+	width: 220px;
+	position: absolute;
+	top: 10px;
+	left: 120px;
+}
+
+.background {				/* чорний фон для тексту і зображення */
+	background-color: #292525;
+	width: 100%;
+	height: 270px;
+}
+
+.content1 {				/* контейнер для тексту і зображення */ 
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-container {
+	width: 300px;
+	color: white;
+	margin: 60px 0 0 20px;
+	text-align: justify;
+	font-size: 17px;
+	float: left;
+}
+
+.text-container p {
+	margin: 0 0 30px 0;
+
+}
+
+button {
+	width: 90px;
+	height: 35px;
+	background-color: #787677;
+	float: left;
+	margin: 0 0 0 26px;
+	border-radius: 4px;
+	outline: none;
+}
+
+.img1 {
+	width: 350px;
+	float: right;
+	margin: 60px 20px 0 0;
+}
+
+.content2 {				/* контейнер для тексту по центру */
+	width: 900px;
+	height: 100px;
+	margin-left: auto;	
+	margin-right: auto;
+	text-align: center;
+	padding-top: 20px;
+}
+.content2 p {
+	margin-top: 7px;
+	margin-bottom: 7px;
+
+}
+
+.row {
+	background-color: grey;
+	height: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header1 {
+	width: 100px;
+	height: 15px;
+}
+
+.first {
+	width: 500px;
+}
+
+.second {
+	width: 700px;
+}
+
+.third {
+	width: 300px;
+}
+
+hr {
+	width: 700px;
+}
+
+footer {				/* контейнер для слайдера */
+	width: 100%;
+	height: 300px;	
+}
+
+.content3 {
+	width: 900px;
+	height: 300px;
+	margin: 20px auto;
+}
+
+.arrow {
+	width: 30px;
+	height: 30px;
+	margin-top: 85px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.hidden_container {
+	width: 550px;
+	height: 180px;
+	margin: auto;
+	overflow: hidden;
+
+}
+
+.slider {
+	width: 520px;
+	height: 180px;
+	margin: auto;
+	position: relative;
+    transition: 1s;
+}
+
+.img{
+	width:120px;
+	height: 120px;
+	margin: 30px 5px;
+	float: left;
+}
+
+.img p {
+	text-align: center;
+}
+
+.check {
+	width: 900px;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.checkButton {
+	margin-left: 415px;
+}
+
+input#left_btn:checked .slider {
+	left: 250px;
+}
+
+
+
