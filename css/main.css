@@ -144,6 +144,7 @@ footer {				/* контейнер для слайдера */
 	width: 900px;
 	height: 300px;
 	margin: 20px auto;
+	text-align: center;
 }
 
 .arrow {
@@ -161,7 +162,7 @@ footer {				/* контейнер для слайдера */
 }
 
 .hidden_container {
-	width: 550px;
+	width: 520px;
 	height: 180px;
 	margin: auto;
 	overflow: hidden;
@@ -198,8 +199,19 @@ footer {				/* контейнер для слайдера */
 	margin-left: 415px;
 }
 
-#left_btn:checked~.slide {
-	left: 250px;
+#left_btn:checked ~ .hidden_container .slider {
+	transform: translate(-125px);
+	transition-duration: 2s;
+}
+
+ #right_btn:checked  ~ .hidden_container .slider {
+	transform: translate(125px);
+	transition-duration: 2s;
+}
+
+ #mid_btb:checked  ~ .hidden_container .slider {
+	transform: translate(0);
+	transition-duration: 2s;
 }
 
 @media screen and (max-width: 600px) {
@@ -389,8 +401,32 @@ footer {				/* контейнер для слайдера */
 		display: none;
 	}
 
-	#left_btn:checked~.slide {
-		display: none;
+	#left_btn:checked  ~ .hidden_container .slider {
+		transform: translate(0px);
+		transition-duration: 2s;
+	}
+	#left_btn:checked ~ .hidden_container .slider .img{
+		width: 100px;
+		transition-duration: 2s;
+	}
+
+	#mid_btn:checked ~ .hidden_container .slider .img{
+		width: 150px;
+		transition-duration: 2s;
+	}
+
+	 #mid_btb:checked  ~ .hidden_container .slider {
+		transform: translate(0);
+		transition-duration: 2s;
+	}
+
+	#right_btn:checked  ~ .hidden_container .slider {
+		transform: translate(0px);
+		transition-duration: 2s;
+	}
+	#right_btn:checked ~ .hidden_container .slider .img{
+		width: 300px;
+		transition-duration: 2s;
 	}
 } 
 
