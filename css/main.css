@@ -4,13 +4,14 @@ body {
 	background-color: #eaeaea;
 }
 
-nav {             /* оформлення флекс контейнера для шапки сайту*/
+.nav {          
+	width: 100%;   /* оформлення флекс контейнера для шапки сайту*/
 	height: 50px;
-	min-width: 900px;
+
 
 	background: #e6e5e5;
-	justify-content: flex-end;
 	display: flex;  
+	justify-content: space-around;
 	flex-flow: row wrap;
 
 	  
@@ -27,12 +28,12 @@ nav {             /* оформлення флекс контейнера для
 	display: flex;
 	font-size: 20px;
 	flex-flow: row wrap;
-	align-items: flex-end;
-	margin: 20px 100px 0 0;
+	margin-left: 20px;
 }
 
 li {
 	padding: 5px;
+	align-items: flex-end;
 }
 
 .order a {
@@ -46,9 +47,8 @@ li {
 
 .logo {					/* логотип */
 	width: 220px;
-	position: absolute;
-	top: 10px;
-	left: 120px;
+	position: relative;
+	top: 20px;
 }
 
 .background {				/* чорний фон для тексту і зображення */
@@ -169,8 +169,8 @@ footer {				/* контейнер для слайдера */
 }
 
 .slider {
-	width: 520px;
-	height: 180px;
+	width: inherit;
+	height: inherit;
 	margin: auto;
 	position: relative;
     transition: 1s;
@@ -198,9 +198,199 @@ footer {				/* контейнер для слайдера */
 	margin-left: 415px;
 }
 
-input#left_btn:checked .slider {
+#left_btn:checked~.slide {
 	left: 250px;
 }
 
+@media screen and (max-width: 600px) {
+	/* меню */
+	.nav {
+		min-width: 350px;
+	}
 
+	.nav ul {
+		width: 100px;
+		padding: 5px 0;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+
+	.nav ul:hover li {
+		display: inline-block;
+		margin: 0 0 0px;
+		padding-right: 10px;
+		width: 60px;
+
+	}
+
+	.nav li {
+		padding: 0;
+		display: none;
+	}
+
+	.nav a {
+		background: #999;
+		color: #fff;
+		display: block;
+		width: 100px;
+		text-align: center;
+	}
+
+	.nav a:hover {
+		color: #000;
+	}
+
+	.nav .current {
+		display: block;
+	}
+	
+	.background {
+		width: 100%;
+		height: auto;
+		min-width: 310px;
+	}
+
+	.content1 {				/* контейнер для тексту і зображення */ 
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-flow: row wrap;
+	}
+
+	.text-container {
+	width: 300px;
+	color: white;
+	margin: 30px auto;
+	font-size: 17px;
+	}
+
+	.text-container p {
+		margin: 0 0 30px 0;
+		text-align: center;
+
+	}
+
+	button {
+		width: 90px;
+		height: 35px;
+		background-color: #787677;
+		float: left;
+		margin: 0 30px 0;
+		border-radius: 4px;
+		outline: none;
+	}
+
+	.img1 {
+		width: 300px;
+		margin: 10px auto;
+	}
+
+	.content2 {				/* контейнер для тексту по центру */
+	width: 350px;
+	height: 100px;
+	margin-left: auto;	
+	margin-right: auto;
+	text-align: center;
+	padding-top: 20px;
+	}
+
+	.content2 p {
+		margin-top: 7px;
+		margin-bottom: 7px;
+	}
+
+	.row {
+		background-color: grey;
+		height: 5px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header1 {
+		width: 100px;
+		height: 15px;
+	}
+
+	.first {
+		width: 200px;
+	}
+
+	.second {
+		width: 250px;
+	}
+
+	.third {
+		width: 180px;
+	}
+
+	hr {
+		width: 700px;
+	}
+
+	footer {				/* footer */
+		width: 100%;
+		height: auto;	
+	}
+
+	.content3 {
+		width: 350px;
+		height: auto;
+		margin: 20px auto;
+	}
+
+	.arrow {
+		width: 30px;
+		height: 30px;
+		margin-top: 85px;
+		display: none
+	}
+
+	.left {
+		float: left;
+		display: none;
+	}
+
+	.right {
+		float: right;
+		display: none;
+	}
+
+	.hidden_container {
+		width: inherit;
+		height: inherit;
+		overflow: hidden;
+
+	}
+
+	.slider {
+		width: inherit;
+		height: inherit;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.img{
+		width: 300px;
+		height: auto;
+	}
+
+	.img p {
+		text-align: center;
+	}
+
+	.check {
+		display: none
+	}
+
+	.checkButton {
+		display: none;
+	}
+
+	#left_btn:checked~.slide {
+		display: none;
+	}
+} 
 
