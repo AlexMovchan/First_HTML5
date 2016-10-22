@@ -5,7 +5,7 @@ body {
 }
 
 .nav {          
-	width: 100%;   /* оформлення флекс контейнера для шапки сайту*/
+	min-width: 900px;   /* оформлення флекс контейнера для шапки сайту*/
 	height: 50px;
 
 
@@ -21,7 +21,6 @@ body {
 	display: -webkit-flex;
 	-webkit-flex-flow: row wrap;
 }
-
 
 .order {                     /* оформнення навігаційної панелі */
 	list-style: none;
@@ -53,7 +52,7 @@ li {
 
 .background {				/* чорний фон для тексту і зображення */
 	background-color: #292525;
-	width: 100%;
+	min-width: 900px;
 	height: 270px;
 }
 
@@ -135,8 +134,8 @@ hr {
 	width: 700px;
 }
 
-footer {				/* контейнер для слайдера */
-	width: 100%;
+footer {	
+	width: 100%;			/* контейнер для слайдера */
 	height: 300px;	
 }
 
@@ -217,7 +216,7 @@ footer {				/* контейнер для слайдера */
 @media screen and (max-width: 600px) {
 	/* меню */
 	.nav {
-		min-width: 350px;
+		min-width: 320px;
 	}
 
 	.nav ul {
@@ -257,14 +256,20 @@ footer {				/* контейнер для слайдера */
 		display: block;
 	}
 	
+	.logo {					/* логотип */
+		width: 190px;
+		position: relative;
+		top: 20px;
+ 	}
 	.background {
 		width: 100%;
+		min-width: 320px;
 		height: auto;
-		min-width: 310px;
+
 	}
 
 	.content1 {				/* контейнер для тексту і зображення */ 
-	width: 350px;
+	width: 320px;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -300,7 +305,7 @@ footer {				/* контейнер для слайдера */
 	}
 
 	.content2 {				/* контейнер для тексту по центру */
-	width: 350px;
+	width: 320px;
 	height: 100px;
 	margin-left: auto;	
 	margin-right: auto;
@@ -347,7 +352,7 @@ footer {				/* контейнер для слайдера */
 	}
 
 	.content3 {
-		width: 350px;
+		width: 320px;
 		height: auto;
 		margin: 20px auto;
 	}
@@ -406,7 +411,7 @@ footer {				/* контейнер для слайдера */
 		transition-duration: 2s;
 	}
 	#left_btn:checked ~ .hidden_container .slider .img{
-		width: 100px;
+		width: 90px;
 		transition-duration: 2s;
 	}
 
